@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<config>
+
+	<modules>
+		<Rublon_RublonModule>
+			<version>2.0.0</version>
+		</Rublon_RublonModule>
+	</modules>
+
+	<default>
+		<rublonmodule_options>
+			<general>
+				<rublon_enabled>1</rublon_enabled>
+				<rublon_system_token></rublon_system_token>
+				<rublon_secret_key></rublon_secret_key>
+			</general>
+		</rublonmodule_options>
+	</default>
+
+	<adminhtml>
+	
+		<layout>
+			<updates>
+				<rublonmodule>
+					<file>rublonmodule.xml</file>
+				</rublonmodule>
+			</updates>
+		</layout>
+		<translate>
+			<modules>
+				<Rublon_RublonModule>
+					<files>
+						<default>Rublon_RublonModule.csv</default>
+					</files>
+				</Rublon_RublonModule>
+			</modules>
+		</translate>
+
+	</adminhtml>
+
+	<admin>
+		<secure_url>
+			<rublonmodule>/rublon</rublonmodule>
+		</secure_url>
+		<routers>
+			<rublonmodule>
+				<use>admin</use>
+				<args>
+					<module>Rublon_RublonModule</module>
+					<frontName>rublon</frontName>
+				</args>
+			</rublonmodule>
+		</routers>
+	</admin>
+
+	<global>
+		<helpers>
+			<rublonmodule>
+				<class>Rublon_RublonModule_Helper</class>
+			</rublonmodule>
+		</helpers>
+		<resources>
+			<rublonmodule_setup>
+				<setup>
+					<module>Rublon_RublonModule</module>
+				</setup>
+			</rublonmodule_setup>
+		</resources>
+		<blocks>
+			<adminhtml>
+				<rewrite>					
+					<page_header>Rublon_RublonModule_Block_Adminhtml_Header</page_header>
+					<page_menu>Rublon_RublonModule_Block_Adminhtml_Menu</page_menu>
+				</rewrite>
+			</adminhtml>			
+			<rublonmodule>
+				<class>Rublon_RublonModule_Block</class>
+			</rublonmodule>
+		</blocks>
+		<models>			
+			<rublonmodule>
+				<class>Rublon_RublonModule_Model</class>
+				<resourceModel>rublonmodule_resource</resourceModel>
+			</rublonmodule>
+			<rublonmodule_resource>
+				<class>Rublon_RublonModule_Model_Resource</class>
+				<entities>					
+					<rublon_user>
+						<table>Rublon_RublonModule_user</table>
+					</rublon_user>
+				</entities>
+			</rublonmodule_resource>
+		</models>
+		<events>
+			<admin_user_authenticate_after>
+				<observers>
+					<rublonmodule>
+						<class>rublonmodule/observer</class>
+						<method>afterAdminLogin</method>
+					</rublonmodule>
+				</observers>
+			</admin_user_authenticate_after>
+			<controller_front_init_before>
+				<observers>
+					<rublon2factor>
+						<class>rublonmodule/observer</class>
+						<method>controllerInit</method>
+					</rublon2factor>
+				</observers>
+			</controller_front_init_before>			
+		</events>
+	</global>
+
+</config>

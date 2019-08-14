@@ -1,0 +1,60 @@
+<div class="bootstrap rublon-allow-tracking-header">
+	<img id="rublon-allow-tracking-logo-img" alt=""
+		src="<?php echo $logo_url; ?>">
+	<h3><?php echo $path; ?></h3>
+</div>
+
+<div class="rublon-container">
+
+<form id="rublon-consumer-registration-init" action="<?php echo $registration_init_action; ?>" method="post">
+
+<div id="rublon-api-reg-container">
+			
+		<input name="form_key" type="hidden" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>" />
+		<h3>API registration</h3>
+		<div class="rublon-apireg-half-column rublon-apireg-description">
+			<p><?php echo $api_message[0]; ?></p>
+			<p><?php echo $api_message[1]; ?></p>
+			<fieldset class="rublon-apireg-fieldset">
+				<label for="rublon-apireg-terms-agreed"><input type="checkbox"
+					id="rublon-apireg-terms-agreed" name="apiregTermsAgreed" value="1"> <strong>(*)</strong> I
+					agree to the <a
+					href="https://developers.rublon.com/54/Terms-of-Service"
+					target="_blank">Rublon API Terms of Service</a></label>
+			</fieldset>
+			<fieldset class="rublon-apireg-fieldset">
+				<label for="rublon-apireg-newsletter-signup"><input type="checkbox"
+					id="rublon-apireg-newsletter-signup" name="apiregNewsletterSignup"
+					value="1"> Subscribe to our newsletter</label>
+			</fieldset>
+		</div>	
+	<div class="rublon-apireg-half-column rublon-apireg-image">
+		<img src="<?php echo $rublon_visual_url; ?>"
+			class="rublon-apireg-visual rublon-image">
+
+	</div>
+</div>
+
+<div id="rublon-allow-tracking-container">
+	<div class="rublon-allow-tracking-content">
+		<h3><?php echo $title ?></h3>
+		<p><?php echo $allow_message ?></p>
+		<fieldset class="rublon-apireg-fieldset">
+			<label for="rublon-apireg-allow-tracking"><input type="checkbox"
+				id="rublon-apireg-allow-tracking" name="apiregAllowTracking" value="1">
+				Allow tracking</label>
+		</fieldset>
+		<div class="rublon-buttons">
+			<a id="rublon-button-activate" class="rublon-button">Activate</a>
+		</div>
+	</div>
+	<sub>(*) Required field</sub>
+</div>
+
+</form>
+
+</div>
+<form action="{$rublon_allow_tracking_action_url}"
+	id="rublon-allow-tracking-form" method="post">
+	<input name="rublon-allow-tracking" type="hidden" value="0">
+</form>

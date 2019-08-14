@@ -1,0 +1,41 @@
+<?php //{if $messages} {$messages} {/if} ?>
+<br />
+
+<div class="bootstrap rublon-allow-tracking-header">
+	<img id="rublon-allow-tracking-logo-img" alt="" src="{$smarty.const._PS_BASE_URL_}/modules/rublon/img/rublon_logo_32x32.png"><h3>{$path}</h3>
+</div>
+
+<div id="rublon-api-reg-container" class="bootstrap rublon-container">
+	<form id="rublon-consumer-registration-init" action="{$registration_init_action}" method="post">
+		<h3>{$rublon_api_reg_title}</h3>
+		<div class="rublon-apireg-half-column rublon-apireg-description">
+			<p>{$rublon_api_reg_messages[0]}</p>
+			<p>{$rublon_api_reg_messages[1]}</p>
+			<fieldset class="rublon-apireg-fieldset">
+				<label for="rublon-apireg-terms-agreed"><input
+					type="checkbox" id="rublon-apireg-terms-agreed"
+					name="apiregTermsAgreed" value="1">I agree to the <a
+					href="https://developers.rublon.com/54/Terms-of-Service"
+					target="_blank">Rublon API Terms of Service</a></label>
+			</fieldset>
+			<fieldset class="rublon-apireg-fieldset">
+				<label for="rublon-apireg-newsletter-signup"><input
+					type="checkbox" id="rublon-apireg-newsletter-signup"
+					name="apiregNewsletterSignup" value="1">Subscribe to our
+					newsletter</label>
+			</fieldset>
+			
+		</div>
+	</form>
+	<div class="rublon-apireg-half-column rublon-apireg-image">
+		<img
+			src="{$smarty.const._PS_BASE_URL_}/modules/rublon/img/rublon_visual.gif"
+			class="rublon-apireg-visual rublon-image">
+			
+	</div>
+	
+		<div class="rublon-buttons">
+			<!-- a id="rublon-button-cancel" class="btn btn-default btn-lg pull-left">Cancel <i class="icon icon-times icon-lg"></i></a>  -->
+			<a id="rublon-button-activate" class="btn btn-default btn-lg pull-left">Activate <i class="icon icon-angle-right icon-lg"></i></a>
+		</div>	
+</div>

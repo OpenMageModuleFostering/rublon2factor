@@ -1,0 +1,54 @@
+<?php if ($data['showUpgradeBox']): ?>
+<div class="updated rublon-be-infobox-container<?php echo (!$data['isProjectOwner']?' warning':''); ?>">				
+	<div id="message" class="rublon-be-infobox-content">
+	    <div class="rublon-buy-now-subcontainer">
+	        <div class="rublon-buy-now-left">  				
+				
+        		<h3><?php echo $data['boxTitle']; ?></h3>
+        		
+				<p>
+        		  <?php echo $data['line1Text']; ?>
+        		  <?php echo $data['line2Text']; ?>
+        		  <?php echo $data['line3Text']; ?>
+        		</p>
+        		<p>
+					<a href="<?php echo $data['upgradeNowURL']; ?>" class="rublon-button-buy-now" target="_blank"><?php echo $data['upgradeNowText']; ?></a>
+				</p>
+				<p class="rublon-buy-now-tip">
+        		  <?php echo $data['smallHintText']; ?>
+        		</p>  
+    		</div>            			
+		</div>
+	</div>
+</div>
+<?php elseif($data['isBusinessEdition']): ?>
+<h3><?php echo $data['businessEditionActivatedText']; ?></h3>
+<?php endif;?>
+
+<?php
+    if ($data['canShowTrustedDeviceWidget']) { 
+        echo $data['deviceWidget'];
+    }
+?>
+
+<?php if ($data['showNotProtectedMessage']): ?>
+<div class="updated rublon-be-infobox-container warning">				
+	<div id="message" class="rublon-be-infobox-content">
+	    <div class="rublon-buy-now-subcontainer">
+	        <div class="rublon-buy-now-left">  				
+				
+        		<h3><?php echo $data['notProtectedBoxTitle']; ?></h3>
+        		
+				<p>
+        		  <?php echo $data['notProtectedText']; ?>        		  
+        		</p>        						  
+    		</div>            			
+		</div>
+	</div>
+</div>
+
+<?php        
+  endif; 
+?>
+
+<div style="float: right"><button onclick='document.location.href="<?php echo $data['flushCacheUrl']; ?>"'><?php echo $data['flushCacheText']; ?></button></div>

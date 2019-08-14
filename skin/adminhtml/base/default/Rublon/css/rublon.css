@@ -1,0 +1,201 @@
+@CHARSET "UTF-8";
+/* --- Allow Tracking view && API registration view ---*/
+.rublon-container {
+	width: 70%;
+	position: relative;
+	padding-left: 20px;
+  	border-left: solid 3px #fff;
+  	border: solid 2px #26C370;
+  	box-shadow: inset 140px 0 0 #26C370;
+  	padding: 5px 20px 20px 160px;
+  	border-radius: 3px;
+  	overflow: hidden;  	
+}
+
+.rublon-container h3 {
+	margin-top: 5px !important;
+	margin-left: 0px !important;
+	padding: 0px !important;
+}
+
+#rublon-allow-tracking-container {
+	width: 100%;
+	float: left;
+	clear: both;
+}
+
+.rublon-allow-tracking-header {
+	margin-top: 20px;
+	padding-right: 3px;
+	margin-bottom: 30px;
+}
+
+.rublon-allow-tracking-header h3 {
+	margin-left: 35px !important;
+	font-size: 1.75em !important;
+}
+
+.rublon-allow-tracking-content {
+	overflow: hidden;
+}
+
+#rublon-api-reg-container .rublon-buttons {
+	margin-top: 30px;
+	float: left;
+	width: 200px;
+}
+
+.rublon-buttons {
+	width: 100%;
+	text-align: right;
+}
+
+.rublon-button:HOVER {
+	text-decoration: none;
+	color: #fff !important;
+	background: #76B895 !important;
+}
+
+.rublon-button:VISITED {
+	text-decoration: none;
+	color: #fff !important;
+}
+
+.rublon-button {
+  cursor: pointer;
+  display: inline-block;
+  height: 53px;
+  line-height: 53px;
+  border-bottom: 3px solid #1D8C51 !important;
+  background: #26C370 !important;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 0 34px;
+  text-align: center;
+  -webkit-transition: margin 0.1s ease-in-out, border 0.1s ease-in-out, opacity 0.1s ease-in-out;
+  -moz-transition: margin 0.1s ease-in-out, border 0.1s ease-in-out, opacity 0.1s ease-in-out;
+  transition: margin 0.1s ease-in-out, border 0.1s ease-in-out, opacity 0.1s ease-in-out;
+}
+
+#rublon-button-activate {
+	margin-left: 1em;
+}
+
+#rublon-api-reg-container #rublon-button-activate {
+	margin-left: 0em;
+}
+
+#rublon-allow-tracking-logo-img {
+	float: left;
+	vertical-align: middle;
+}
+
+.rublon-apireg-half-column {
+	width: auto;
+}
+
+.rublon-apireg-half-column.rublon-apireg-image {
+	float: right;
+	width: auto;
+}
+
+.rublon-apireg-half-column.rublon-apireg-description {
+	float: left;
+	width: 50%;
+}
+
+#RublonDeviceWidget {
+	width: 500px;
+	height: 300px;
+	border: none;
+}
+
+#RublonBadgeLink {
+	font-size: 10px; 
+}
+
+.rublon-be-infobox-container {
+	
+	border-radius: 5px;
+	border: 2px solid #00c389;
+	background-color: #ffffff;
+	padding: 10px;
+	margin-top: 25px;
+	width: 45%;		
+	margin: 15px !important;
+	margin-left: 0px !important;
+}
+
+.rublon-be-infobox-content {
+	width: 100%;
+	padding: 0px;	
+}
+
+.rublon-be-infobox-container.warning {
+	border: 2px solid #f16048;
+	background-color: #faebe7;
+}
+
+.rublon-be-infobox-content ul {
+	margin-left: 20px;
+	list-style-type: circle;
+}
+
+.rublon-button-buy-now:HOVER {
+	text-decoration: none;
+	color: #fff !important;
+	background: #76B895 !important;
+}
+
+.rublon-button-buy-now:VISITED {
+	text-decoration: none;
+	color: #fff !important;
+}
+
+.rublon-button-buy-now {
+  cursor: pointer;
+  display: inline-block;
+  height: 53px;
+  line-height: 53px;
+  border-bottom: 3px solid #1D8C51 !important;
+  background: #26C370 !important;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 0 34px;
+  text-align: center;
+  -webkit-transition: margin 0.1s ease-in-out, border 0.1s ease-in-out, opacity 0.1s ease-in-out;
+  -moz-transition: margin 0.1s ease-in-out, border 0.1s ease-in-out, opacity 0.1s ease-in-out;
+  transition: margin 0.1s ease-in-out, border 0.1s ease-in-out, opacity 0.1s ease-in-out;
+}
+
+.rublon-buy-now-subcontainer {
+	width: 100%;	
+	overflow: hidden;	
+	display: table;
+}
+
+.rublon-buy-now-left {
+	display: table-cell;
+    width: 70%;
+    vertical-align: top;
+    text-align: left;
+}
+
+.rublon-buy-now-right {
+	display: table-cell;
+    padding-right: 10px;    
+    width: 30%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.rublon-buy-now-tip {
+	color: #797979;
+	font-size: 0.8em;
+}

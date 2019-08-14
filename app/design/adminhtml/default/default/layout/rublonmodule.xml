@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+	
+	<adminhtml_index_login>
+		<reference name="form.additional.info">
+			<block type="rublonmodule/seal" name="rublon_seal" />
+		</reference>
+	</adminhtml_index_login>
+	
+	<rublonmodule_adminhtml_settings_index>
+		<reference name="head">
+        	<action method="addCss">
+                <stylesheet>Rublon/css/rublon.css</stylesheet>                
+            </action>
+        </reference>        
+        <reference name="content">
+            <block type="adminhtml/template" name="RublonModule" template="RublonModule/index.phtml" />            
+        </reference>        
+    </rublonmodule_adminhtml_settings_index>
+    
+    <rublonmodule_adminhtml_activation_index>
+		<reference name="head">
+        	<action method="addCss">
+                <stylesheet>Rublon/css/rublon.css</stylesheet>                
+            </action>
+            <action method="addJs">
+                <script>Rublon/rublon.js</script>
+            </action>
+        </reference>        
+        <reference name="content">
+            <block type="adminhtml/template" name="RublonModule" template="RublonModule/activation.phtml" />            
+        </reference>        
+    </rublonmodule_adminhtml_activation_index>
+    
+    <rublonmodule_adminhtml_activation_initialize>
+		<reference name="head">
+        	<action method="addCss">
+                <stylesheet>Rublon/css/rublon.css</stylesheet>                
+            </action>
+            <action method="addJs">
+                <script>Rublon/rublon.js</script>
+            </action>
+        </reference>        
+        <reference name="content">
+            <block type="adminhtml/template" name="RublonModule" template="RublonModule/registration.phtml" />            
+        </reference>        
+    </rublonmodule_adminhtml_activation_initialize>    
+
+</layout>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<config>
+<!-- 
+	<tabs>
+		<rublonconfig translate="label" module="rublon2factor">
+            <label>Rublon</label>
+            <sort_order>1</sort_order>
+        </rublonconfig>
+    </tabs>
+	<sections>
+		<rublon2factor_options translate="label" module="rublon2factor">
+			<label>Rublon</label>
+			<tab>rublonconfig</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>10000</sort_order>
+			<show_in_default>0</show_in_default>
+			<show_in_website>0</show_in_website>
+			<show_in_store>0</show_in_store>
+			<groups>
+				<activation translate="label" module="rublon2factor">
+					<label>Rublon</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>100</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>0</show_in_website>
+					<show_in_store>0</show_in_store>
+					<fields>
+						<rublon_registration translate="label comment" module="rublon2factor">
+							<frontend_type>button</frontend_type>
+							<frontend_model>rublon2factor/activation</frontend_model>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</rublon_registration>
+					</fields>
+				</activation>
+				<protection translate="label" module="rublon2factor">
+					<label>Account Protection</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>101</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>0</show_in_website>
+					<show_in_store>0</show_in_store>
+					<fields>
+						<rublon_protection translate="label comment" module="rublon2factor">
+							<frontend_type>button</frontend_type>
+							<frontend_model>rublon2factor/protection</frontend_model>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</rublon_protection>
+					</fields>
+				</protection>
+			</groups>
+		</rublon2factor_options>
+	</sections>
+ -->
+</config>

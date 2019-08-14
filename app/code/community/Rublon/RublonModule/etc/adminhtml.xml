@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config>
+
+  <menu>
+      <rublonmodule translate="label" module="rublonmodule">
+          <title>Rublon</title>
+          <sort_order>100</sort_order>
+          <children>
+              <rublonmodule_item1 translate="label" module="rublonmodule">
+                  <title>Settings</title>
+                  <sort_order>1</sort_order>
+                  <action>rublon/adminhtml_settings</action>
+              </rublonmodule_item1>              
+          </children>
+      </rublonmodule>
+  </menu>
+
+	<acl>
+		<resources>
+			<all>
+				<title>Allow Everything</title>
+			</all>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<rublonmodule_options translate="title" module="rublonmodule">
+										<title>RublonModule</title>
+										<sort_order>100</sort_order>
+									</rublonmodule_options>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>
