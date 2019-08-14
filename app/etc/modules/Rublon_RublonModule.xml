@@ -9,6 +9,7 @@
                 <Mage_Adminhtml/>
                 <Mage_Admin/>                
             </depends>
+            <version>2.0.1</version>
         </Rublon_RublonModule>
     </modules>
 </config>
