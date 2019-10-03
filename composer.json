@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/rublon2factor",
+    "name": "OpenMageModuleFostering\/rublon2factor",
     "type": "magento-module",
     "license": "GNU-Public-License,-version-2",
     "homepage": "",
     "description": "Rublon Account Security",
     "authors": [
-    {
-        "name": "Rublon Team",
-        "email": "developers@rublon.com"
-    }
-],
+        {
+            "name": "Rublon Team",
+            "email": "developers@rublon.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
